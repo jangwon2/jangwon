@@ -1,0 +1,185 @@
+@media (max-width: 480px) {
+
+.pc{display: none;}
+.mo{display: block;}
+
+
+/* 메뉴 바 */
+.menu{
+    width: 70vw; height: 100%;
+    left: -60vw;
+    top: 0; z-index: 5;
+
+}
+.menu.on{
+    left: 0; transform: translateX(0);
+}
+.menu .left{
+    float: left; 
+    width: 85%; height: 100%;
+    background: #111;
+    padding: 8% 0;
+    box-sizing: border-box;
+    position: relative;
+}
+/* 메뉴 바 - gnb */
+.menu .gnb li{
+    float: none; 
+    width: 100%; height: auto;
+    border-right: none;
+    padding: 10px;
+}
+
+.menu .gnb li a{
+    line-height: 6vh;
+}
+/* 메뉴 바 - lnb */
+.menu .lnb{
+    width: 100%;
+    height: auto;
+    border-right: none;
+    position: absolute;
+    bottom: 0; left: 0;
+    padding: 4% 2%;
+}
+.menu .lnb .l-box{float: none; width: 100%;}
+.menu .lnb .l-box li{
+    float: left; padding: 0;
+    width: 20%;
+}
+
+.menu .lnb .r-box{float: none; width: 100%;}
+.menu .lnb .r-box li{
+    height: 6vh;
+    position: relative;
+    width: 49%;
+}
+.menu .lnb .l-box li:hover p{opacity: 0;}
+
+/* 메뉴 바 - 메뉴온오프 */
+.menu .menu-bt{
+    width: 15%;
+    margin-top: 20%;
+}
+.menu .menu-bt:hover{background: #111;}
+.menu .menu-bt:hover p{color: #aaa;}
+
+/* 3d에셋 */
+.pop{
+    width: 100vw; height: 100vh;
+    top: 50%; left: 50%;
+    padding: 24px; box-sizing: border-box;
+    display: none;
+    z-index: 10;    
+}
+.pop .close{font-size: 24px;}
+.pop .list-wrap{height: 85vh;}
+.pop .list-wrap .box{padding: 0;}
+.pop .list-wrap .box .title h4{font-size: 18px;}
+/* .pop .list-wrap .box .title i{font-size: 24px;} */
+
+.pop .list-wrap .box ul li{
+    width: 100%; margin: 0 0 6% 0;
+    float: none;
+}
+.pop .list-wrap .box ul li p{font-size: 16px;}
+
+
+
+
+
+/* 하단 페이지 네비게이션 */
+
+.page-nav.mo{
+    width: 70%;
+    position: fixed;
+    bottom: 8%; left: 50%; transform: translateX(-50%);
+    overflow: unset;
+}
+
+.page-nav ul{
+    display: flex;
+}
+.page-nav ul li{
+    height: 16px;
+    padding: 16px 0;
+    position: relative;
+}
+.page-nav.mo ul li div{
+    width: 100%; height: 100%;
+    background: #fff;
+    border-radius: 6px;
+}
+.page-nav ul li div#on{background: #FF7B54; }
+.page-nav ul li p{
+    position: absolute;
+    font-size: 12px; text-align: center;
+    width: 120px;
+    bottom: -20px; left: 50%; transform: translateX(-50%);
+    color: #fff;
+    display: none;
+}
+.page-nav ul li p#on{display: block;}
+.page-nav ul li:hover p{display: block;}
+
+/* 비디오 창 */
+.video-pop-bg i{
+    z-index: 30; top: 1.5%;
+}
+.video-pop{
+    width: 100vw; height: 100vh;
+    padding: 0;
+}
+.video-pop .video-wrap{
+    display: block;  
+}
+.video-pop .left{
+    width: 100%;
+    margin-right: 0;
+}
+.video-pop .left .video-box{
+    margin-top: 12%;
+}
+.video-pop .left .text{
+    margin-top: 4%;
+    padding: 0 5%;
+}
+.video-pop .left .text h3{
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 26px;
+}
+.video-pop .left .text p{
+    font-size: 14px;
+    height: 10vh;
+    overflow-y: auto;
+}
+
+.video-pop .right{
+    width: 100%;
+    padding: 0 5%; box-sizing: border-box;
+}
+.video-pop .right h4.mo{
+    border-bottom: 2px solid #FF7B54;
+    color: #fff; padding: 3% 0;
+    font-size: 18px;
+}
+.video-pop .right ul{
+    margin-top: 3%;
+    height: 34vh;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+}
